@@ -8,13 +8,15 @@ fi
 
 arg1="$1"
 arg2="$2"
+
 # Check the value of the argument
 case "$1" in
     "sl")
         echo "Running sl with args"
         curl -s "https://raw.githubusercontent.com/StuffzEZ/scripts/refs/heads/main/sl-runner.sh" "$arg2"
+        ;;
     "packin")
-        echo "Running packin witb args"
+        echo "Running packin with args"
         curl -s "https://raw.githubusercontent.com/StuffzEZ/scripts/refs/heads/main/package-runner-installer/script.sh" "$arg2"
         ;;
     *)
